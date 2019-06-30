@@ -1,0 +1,45 @@
+.basic-buttons_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .button{
+    border-radius: 0.1111rem;
+    text-transform: uppercase;
+    outline: 0;
+  }
+  .orange{
+    color: #FFFFFF;
+    border: 0.05556rem solid #BF3E1F;
+    background-color: #e75735;
+    &:hover{
+      box-shadow: 0 0.1667rem #bf3e1f;
+    }
+    &:active{
+      border: 0.05556rem solid #e75735;
+      background-color: white;
+      color: #e75735;
+      box-shadow: 0 0.1667rem #e75735;
+    }
+  }
+  .default{
+    color: #FFFFFF;
+    border: 0.05556rem solid #28a290;
+    background-color: #4eb7a8;
+    &:hover{
+      box-shadow: 0 0.1667rem  #28a290;
+    }
+    &:active{
+      border: 0.05556rem solid #4eb7a8;
+      background-color: white;
+      color: #4eb7a8;
+      box-shadow: 0 0.1667rem  #4eb7a8;
+    }
+  }
+  .medium{
+    height: 1.7778rem;
+    width: 6.6556rem;
+    font-size:  0.5867rem;
+    font-family: 'Lato Black', sans-serif;
+  }
+}
