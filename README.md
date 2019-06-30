@@ -1,4 +1,4 @@
-# FirstTask_Slider
+FirstTask_Slider
 
 https://zmdog.github.io/FirstTask_Slider/dist
 
