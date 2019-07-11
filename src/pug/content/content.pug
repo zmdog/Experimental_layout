@@ -1,18 +1,19 @@
 include basic_button/basic_button
-include slider-modification/slider-modification
+include slider-modifications/slider-modifications
 include slider/slider
 
 
 .content-block
     main(class='main-block')
         aside(class='control-block')
-            .basic-buttons_content
-                header
-                    .type-block
-                        +basic_button('medium', 'horizontal slider', 'orange')
-                +slider_modification()
-                footer
-                    +basic_button('medium', 'подтвердить', 'orange')
+            .slider-modifications
+                .basic-buttons_content
+                    header
+                        .type-block
+                            +basic_button('medium', 'horizontal slider', 'orange')
+                    +slider_modification()
+                    footer
+                        +basic_button('medium', 'подтвердить', 'orange')
         section(class='sliders_content')
             .slider-wrapper
                 +slider(1, 0, 100, 5, 10)

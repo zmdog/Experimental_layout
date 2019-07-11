@@ -1,7 +1,7 @@
 export function horizontalSlider ($sliders) {
     $sliders.each(function (){
 
-        $(this).append(()=>{
+        $(this).find('.slider-label').html(()=>{
             let filler = '',
                 number = 0,
                 $step = $(this).data("max")/4;
@@ -25,7 +25,7 @@ export function horizontalSlider ($sliders) {
 
 export function verticalSlider($sliders) {
     $sliders.each(function (){
-        $(this).html(' ');
+        $(this).find('.slider-label').html('');
         $(this).slider({
             orientation: "vertical",
             range: "min",

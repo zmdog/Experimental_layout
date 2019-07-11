@@ -1,35 +1,16 @@
-import {horizontalSlider, verticalSlider} from "../slider/sliders";
-
 $(document).ready(()=>{
 
-    let $button = $('header').find('.button'),
-        $sliders = $(".slider");
-    horizontalSlider($sliders);
+    let $buttonSlider = $('header').find('.button'),
+        $slider_modifications = $('.slider-modifications');
 
-    function fillModifications(context, filler, $button){
+    $slider_modifications.sliderModification();
+    let height = $slider_modifications.find('.modification_content').height() + 'px';
+    $slider_modifications.find('.slider-modification').css({'height': height});
 
-        if('horizontal slider' === $button.text()){
-            horizontalSlider($sliders);
-            $button.text('vertical slider')
-        }else{
-            verticalSlider($sliders);
-            $button.text('horizontal slider')
-        }
-        context.children('.modification_content').html(filler);
-        let height = context.children('.modification_content').height() + 'px';
-        context.css({'height': height})
-    }
+    $buttonSlider.on('click', ()=>{
+        $slider_modifications.sliderModification();
 
-    $button.on('click', function () {
-        let $slider_modification = $('.slider-modification'),
-            horizontal = '<div>ГОРИЗОНТАЛЬНЫЙ</div>' + '<div>ГОРИЗОНТАЛЬНЫЙ</div>' + '<div>ГОРИЗОНТАЛЬНЫЙ</div>',
-            vertical = '<div>ВЕРТИКАЛЬНЫЙ</div>' + '<div>ВЕРТИКАЛЬНЫЙ</div>' + '<div>ВЕРТИКАЛЬНЫЙ</div>' + '<div>ВЕРТИКАЛЬНЫЙ</div>' + '<div>ВЕРТИКАЛЬНЫЙ</div>',
-            filler = function (button) {
-                return ('horizontal slider' === button.text())? horizontal : vertical;
-            };
-
-        fillModifications($slider_modification, filler($(this)), $(this));
+        let height = $slider_modifications.find('.modification_content').height() + 'px';
+        $slider_modifications.find('.slider-modification').css({'height': height})
     });
-
-
 });
