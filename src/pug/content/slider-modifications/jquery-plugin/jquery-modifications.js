@@ -4,67 +4,91 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
     jQuery.fn.sliderModification = function(){
         let $sliders = $(".slider"),
             $checkboxes = $('.slider-wrapper').find('input'),
-            $slider_modifications = $('.slider-modifications'),
             $buttonModification = $('footer').find('.button'),
-            context = $(this).find('.modification_content'),
+            modification_content = $(this).find('.modification_content'),
             methods = {
                 header: function(header){
                     return '<li class=header>'+ header +'</li>'
                 },
                 changeColors : function(){
-                    return '<ul id=close>'+ this.header('Выбор цвета') +'<li class=content><input type="text" id="color" name="color" value="#123456">' +
-                           '<div id="colorpicker"></div></li></ul>'
+                    let context = this;
+                    return {
+                        controls: function(){
+                            let $change_color = $(modification_content).find('.change-color');
+                            $change_color.find('input').each(function(){
+                                $(this).on('click',function(){
+                                    let farbtastic = $.farbtastic('.colorpicker');
+                                    $(this).each(function(){
+                                        farbtastic.linkTo(this)
+                                    });
+                                    if($('.colorpicker').attr('id') === 'none'){
+                                        let colorpicker = $('.change-color').find('.colorpicker');
+                                        colorpicker.toggle();
+                                        colorpicker.slideToggle(500);
+                                        colorpicker.removeAttr('id')
+
+                                    }
+                                })
+                            })
+                        },
+                        filler: function(){
+                            return '<ul class=change-color id=close>'+ context.header('Выбор цвета') +
+                                   '<li class=content>' +
+                                   '<input type="text" placeholder="Хвост ползунка" id=color-track class=colorwell>' +
+                                   '<input type="text" placeholder="Цвет ползунка" id=color-trail class=colorwell>' +
+                                   '<input type="text" placeholder="Рукоятка ползунка" id=color-handler class=colorwell>' +
+                                   '<div id=none class="colorpicker"></div></li></ul>'
+                        },
+                        confirmColors: function(context){
+                            let color_track = $(modification_content).find('.content').find('#color-track').css('background-color'),
+                                color_trail = $(modification_content).find('.content').find('#color-trail').css('background-color'),
+                                color_handler = $(modification_content).find('.content').find('#color-handler').css('background-color');
+                            $(context).parent().find('.ui-slider-range').css('background',color_track);
+                            $(context).parent().find('.ui-slider-handle').css({'background-color':color_handler,
+                                                                            'border-color':color_handler});
+                            $(context).parent().find('.ui-slider').css('background-color',color_trail)
+                        }
+                    };
                 },
                 changeStep : function(){
                     return '<div>Horizontal-Step</div>'
                 },
                 changeOrientation : function(){
                     return '<ul id=close>'+ this.header('Ориентация слайдера') +'<li class=content>' +
-                        '<div>Вертикальный</div><div>Горизонтальный</div></li></ul>'
+                           '<div>Вертикальный</div><div>Горизонтальный</div></li></ul>'
                 },
                 changeLabel : function(){},
                 changeInterval : function(){},
                 confirmModifications: function(){
                     $checkboxes.each(function(){
                         if($(this).is(':checked')){
-                            let color = $(context).find('.content').find('#color').css('background-color');
-                            $(this).parent().find('.ui-slider-range').css('background',color)
+                            methods.changeColors().confirmColors(this)
                         }
                     });
                 },
                 stateModification: function(context){
                     $(context).find('.header').on('click', function(){
-                        if($(context).attr('id') === 'close'){
-                            $(context).find('.content').css({'display':'block'});
-                            let height = $slider_modifications.find('.modification_content').height() + 'px';
-                            $slider_modifications.find('.slider-modification').css({'height': height});
-                            $(context).attr('id', 'open')
-                        }else{
-                            $(context).find('.content').css({'display':'none'});
-                            let height = $slider_modifications.find('.modification_content').height() + 'px';
-                            $slider_modifications.find('.slider-modification').css({'height': height});
-                            $(context).attr('id', 'close')
-                        }
+                        $(context).find('.content').slideToggle(500);
                     })
                 }
             };
 
         function verticalModification(){
-            context.html(methods.changeStep())
+            modification_content.html(methods.changeStep())
         }
         function horizontalModification(){
-            context.html(methods.changeColors() + methods.changeOrientation())
+            modification_content.html(methods.changeColors().filler() + methods.changeOrientation());
+            methods.changeColors().controls()
         }
 
 
         return this.each(function () {
             if($(this).find('header').find('.button').text() === 'horizontal slider'){
                 horizontalSlider($sliders);
-                $(this).find('header').find('.button').text('vertical slider');
                 horizontalModification();
-                $('#colorpicker').farbtastic('#color');
                 $(this).find('ul').each((index, elem)=>{methods.stateModification(elem)});
-                $buttonModification.on('click', function () {methods.confirmModifications()})
+                $buttonModification.on('click', function () {methods.confirmModifications()});
+                $(this).find('header').find('.button').text('vertical slider');
             }else{
                 verticalSlider($sliders);
                 $(this).find('header').find('.button').text('horizontal slider');
