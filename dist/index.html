@@ -18,13 +18,48 @@
                 <header>
                   <div class="type-block">
                           <div class="basic-button">
-                            <button class="button medium orange">horizontal slider</button>
+                            <button class="button medium orange">горизонталный слайдер</button>
                           </div>
                   </div>
                 </header>
                       <section class="slider-modification">
-                        <div class="modification_content"></div>
+                        <div class="modification_content">
+                          <ul class="change-color">
+                                  <li class="header">Выбор цвета</li>
+                            <li class="content">
+                              <div>
+                                <div class="colors">
+                                        <input class="colorwell" type="text" value="#4eb7a8" id="color-track">
+                                        <p>Хвост ползунка</p>
+                                </div>
+                                <div class="colors">
+                                        <input class="colorwell" type="text" value="#e5e5e5" id="color-trail">
+                                        <p>Цвет ползунка</p>
+                                </div>
+                                <div class="colors">
+                                        <input class="colorwell" type="text" value="#4eb7a8" id="color-handler">
+                                        <p>Рукоятка ползунка</p>
+                                </div>
+                              </div>
+                              <div class="colorpicker" id="none"></div>
+                            </li>
+                          </ul>
+                          <ul class="change-options">
+                                  <li class="header">Параметры ползунка</li>
+                            <li class="content">
+                                    <div class="options" id="slider-step">
+                                      <p>Шаг ползунка</p>
+                                      <input type="text">
+                                    </div>
+                                    <div class="options" id="slider-interval">
+                                      <p>Интервал ползунка</p>
+                                      <input type="text">
+                                    </div>
+                            </li>
+                          </ul>
+                        </div>
                       </section>
+                      <div class="tick-box"></div>
                 <footer>
                         <div class="basic-button">
                           <button class="button medium orange">подтвердить</button>
