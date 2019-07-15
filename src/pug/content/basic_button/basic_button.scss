@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 0 1rem 0 1rem;
   .button{
     border-radius: 0.1111rem;
     text-transform: uppercase;
     outline: 0;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .orange{
     color: #FFFFFF;
@@ -38,7 +39,7 @@
     }
   }
   .medium{
-    height: 1.7778rem;
+    height: 2.1rem;
     width: 6.6556rem;
     font-size:  0.5867rem;
     font-family: 'Lato Black', sans-serif;

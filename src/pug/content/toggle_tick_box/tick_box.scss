@@ -1,0 +1,75 @@
+.tick-boxes_content{
+  display: flex;
+  justify-content: center;
+  margin-right: 0.8889rem;
+  margin-top: 1.4444rem;
+
+  .settings-tick-boxes-before{
+    &:before{
+      position: absolute;
+      content: '';
+      width: 0.2778rem;
+      height: 0.1667rem;
+      transform: rotate(45deg);
+      left: 0.2778rem;
+      top: 0.6111rem;
+      transition: 0.5s;
+    }
+  }
+  .settings-tick-boxes-after{
+    &:after{
+      position: absolute;
+      content: "";
+      width: 0.6667rem;
+      height: 0.1667rem;
+      transform: rotate(-45deg);
+      left: 0.4rem;
+      top: 0.5556rem;
+      transition: 0.5s;
+    }
+  }
+
+  .settings-tick-boxes-ON{
+    @extend .settings-tick-boxes-before;
+    @extend .settings-tick-boxes-after;
+    background-color: #4eb7a8;
+    border-radius: 50%;
+    transition: 0.5s;
+    &:after{
+      background-color: #FFF;
+    }
+    &:before{
+      background-color: #FFF;
+    }
+  }
+  .settings-tick-boxes-OFF{
+    @extend .settings-tick-boxes-before;
+    @extend .settings-tick-boxes-after;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    transition: 0.5s;
+    &:after{
+      background-color: #c0c0c0;
+    }
+    &:before{
+      background-color: #c0c0c0;
+    }
+  }
+
+  .tick-box{
+    position: relative;
+    height: 1.2778rem;
+    width: 1.2778rem;
+    cursor: $point_cursor;
+
+    &#ON{
+      @extend .settings-tick-boxes-ON
+    }
+    &#OFF{
+      @extend .settings-tick-boxes-OFF
+    }
+    &:first-child{
+      margin-right: 0.8333rem;
+    }
+  }
+}

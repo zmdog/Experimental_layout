@@ -1,7 +1,7 @@
 include basic_button/basic_button
 include slider-modifications/slider-modifications
 include slider/slider
-
+include toggle_tick_box/tick_box
 
 .content-block
     main(class='main-block')
@@ -10,8 +10,9 @@ include slider/slider
                 .basic-buttons_content
                     header
                         .type-block
-                            +basic_button('medium', 'horizontal slider', 'orange')
+                            +basic_button('medium', 'горизонталный слайдер', 'orange')
                     +slider_modification()
+                    +tick_box
                     footer
                         +basic_button('medium', 'подтвердить', 'orange')
         section(class='sliders_content')

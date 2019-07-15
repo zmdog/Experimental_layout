@@ -7,11 +7,7 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
             $buttonModification = $('footer').find('.button'),
             modification_content = $(this).find('.modification_content'),
             methods = {
-                header: function(header){
-                    return '<li class=header>'+ header +'</li>'
-                },
                 changeColors : function(){
-                    let context = this;
                     return {
                         controls: function(){
                             let $change_color = $(modification_content).find('.change-color');
@@ -31,14 +27,6 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
                                 })
                             })
                         },
-                        filler: function(){
-                            return '<ul class=change-color id=close>'+ context.header('Выбор цвета') +
-                                   '<li class=content>' +
-                                   '<input type="text" placeholder="Хвост ползунка" id=color-track class=colorwell>' +
-                                   '<input type="text" placeholder="Цвет ползунка" id=color-trail class=colorwell>' +
-                                   '<input type="text" placeholder="Рукоятка ползунка" id=color-handler class=colorwell>' +
-                                   '<div id=none class="colorpicker"></div></li></ul>'
-                        },
                         confirmColors: function(context){
                             let color_track = $(modification_content).find('.content').find('#color-track').css('background-color'),
                                 color_trail = $(modification_content).find('.content').find('#color-trail').css('background-color'),
@@ -50,50 +38,57 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
                         }
                     };
                 },
-                changeStep : function(){
-                    return '<div>Horizontal-Step</div>'
+                changeOptions : function(){
+                    return {
+                        controlsStep: function(){
+                            let step = $(modification_content).find('.change-options')
+                                                              .find('#slider-step')
+                                                              .find('input').val()
+                        },
+                        changeInterval : function(){},
+                        confirmOptions: function(){}
+                    }
                 },
-                changeOrientation : function(){
-                    return '<ul id=close>'+ this.header('Ориентация слайдера') +'<li class=content>' +
-                           '<div>Вертикальный</div><div>Горизонтальный</div></li></ul>'
-                },
+                changeOrientation : function(){},
                 changeLabel : function(){},
-                changeInterval : function(){},
                 confirmModifications: function(){
                     $checkboxes.each(function(){
                         if($(this).is(':checked')){
-                            methods.changeColors().confirmColors(this)
+                            methods.changeColors().confirmColors(this);
+                            methods.changeOptions().controlsStep();
                         }
                     });
                 },
                 stateModification: function(context){
                     $(context).find('.header').on('click', function(){
-                        $(context).find('.content').slideToggle(500);
+                        $(context).find('.content').slideToggle();
                     })
                 }
             };
 
-        function verticalModification(){
-            modification_content.html(methods.changeStep())
-        }
-        function horizontalModification(){
-            modification_content.html(methods.changeColors().filler() + methods.changeOrientation());
-            methods.changeColors().controls()
+        function modification(){
+            $checkboxes.css('display','block');
+            methods.changeColors().controls();
+            methods.changeOptions().changeInterval()
         }
 
 
         return this.each(function () {
-            if($(this).find('header').find('.button').text() === 'horizontal slider'){
+            if($(this).find('header').find('.button').text() === 'горизонталный слайдер'){
                 horizontalSlider($sliders);
-                horizontalModification();
-                $(this).find('ul').each((index, elem)=>{methods.stateModification(elem)});
+                modification();
+                $(this).find('ul').each((index, elem)=>{
+                    $(elem).find('.header').on('click', function(){
+                        $(elem).find('.content').slideToggle();
+                    });
+                });
                 $buttonModification.on('click', function () {methods.confirmModifications()});
-                $(this).find('header').find('.button').text('vertical slider');
+                $(this).find('header').find('.button').text('вертикальный слайдер');
             }else{
                 verticalSlider($sliders);
-                $(this).find('header').find('.button').text('horizontal slider');
-                verticalModification();
-                $buttonModification.on('click', function () {methods.confirmModifications()})
+                $(this).find('header').find('.button').text('горизонталный слайдер');
+                $buttonModification.on('click', function () {methods.confirmModifications()});
+                modification();
             }
         });
     };

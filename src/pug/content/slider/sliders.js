@@ -1,10 +1,18 @@
 export function horizontalSlider ($sliders) {
+
+    let options = {
+        min: 0,
+        max: 500,
+        step: 50,
+        start_position: 30
+    };
+
     $sliders.each(function (){
 
         $(this).find('.slider-label').html(()=>{
             let filler = '',
-                number = 0,
-                $step = $(this).data("max")/4;
+                number = options.min || $(this).data("min"),
+                $step = (options.max || $(this).data("max"))/4;
             for(let i=0; i<5; i++){
                 filler += '<li>'+number+'</li>';
                 number += $step
@@ -15,24 +23,30 @@ export function horizontalSlider ($sliders) {
         $(this).slider({
             orientation: "horizontal",
             range: "min",
-            min:  $(this).data("min"),
-            max:  $(this).data("max"),
-            step: $(this).data("step"),
-            value: $(this).data("start_position")
+            min:  options.min || $(this).data("min"),
+            max:  options.max || $(this).data("max"),
+            step: options.step|| $(this).data("step"),
+            value: options.start_position || $(this).data("start_position")
         });
     });
 }
 
 export function verticalSlider($sliders) {
+    let options = {
+        min: 0,
+        max: 500,
+        step: 50,
+        start_position: 30
+    };
     $sliders.each(function (){
         $(this).find('.slider-label').html('');
         $(this).slider({
             orientation: "vertical",
             range: "min",
-            min:  $(this).data("min"),
-            max:  $(this).data("max"),
-            step: $(this).data("step"),
-            value: $(this).data("start_position")
+            min:  options.min || $(this).data("min"),
+            max:  options.max || $(this).data("max"),
+            step: options.step|| $(this).data("step"),
+            value: options.start_position || $(this).data("start_position")
         });
     });
 }

@@ -1,4 +1,33 @@
+mixin modification_header(content)
+    li(class='header')=content
+
+mixin modificatin_change-color(color, type, content)
+    input(type='text' value=color id=type class='colorwell')
+    p=content
+
+mixin modification_change-options(input, type, content)
+    div(class='options' id=type)
+        p=content
+        input(type=input)
+
+
 mixin slider_modification()
 
     section(class='slider-modification')
         .modification_content
+            ul(class='change-color')
+                +modification_header('Выбор цвета')
+                li(class='content')
+                    div
+                        div(class='colors')
+                            +modificatin_change-color('#4eb7a8', 'color-track', 'Хвост ползунка')
+                        div(class='colors')
+                            +modificatin_change-color('#e5e5e5', 'color-trail', 'Цвет ползунка')
+                        div(class='colors')
+                            +modificatin_change-color('#4eb7a8', 'color-handler', 'Рукоятка ползунка')
+                    div(id='none' class='colorpicker')
+            ul(class='change-options')
+                +modification_header('Параметры ползунка')
+                li(class='content')
+                    +modification_change-options('text', 'slider-step', 'Шаг ползунка')
+                    +modification_change-options('text', 'slider-interval', 'Интервал ползунка')
