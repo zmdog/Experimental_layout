@@ -1,18 +1,13 @@
-export function horizontalSlider ($sliders) {
+export function horizontalSlider ($sliders, settings) {
 
-    let options = {
-        min: 0,
-        max: 500,
-        step: 50,
-        start_position: 30
-    };
+    let options = new Object(settings);
 
     $sliders.each(function (){
 
         $(this).find('.slider-label').html(()=>{
             let filler = '',
                 number = options.min || $(this).data("min"),
-                $step = (options.max || $(this).data("max"))/4;
+                $step = (options.max || $(this).data("max"))/(options.interval || 4);
             for(let i=0; i<5; i++){
                 filler += '<li>'+number+'</li>';
                 number += $step
@@ -22,7 +17,7 @@ export function horizontalSlider ($sliders) {
 
         $(this).slider({
             orientation: "horizontal",
-            range: "min",
+            range: "max",
             min:  options.min || $(this).data("min"),
             max:  options.max || $(this).data("max"),
             step: options.step|| $(this).data("step"),

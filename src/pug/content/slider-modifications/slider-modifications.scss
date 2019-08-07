@@ -59,15 +59,25 @@
         width: 100%;
         text-align: center;
       }
+      .options{
+        display: flex;
+        flex-direction: column;
+      }
     }
     .colorpicker{
       display: flex;
       justify-content: center;
       background: #bd4326;
     }
-    .options{
-      display: flex;
-      flex-direction: column;
+    #slider-orientation{
+      .options{
+        flex-direction: row-reverse;
+        input{
+          height: 1.2rem;
+          width: 1.2rem;
+          margin: 0;
+        }
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
             methods = {
                 changeColors : function(){
                     return {
-                        controls: function(){
+                        append: function(){
                             let $change_color = $(modification_content).find('.change-color');
                             $change_color.find('input').each(function(){
                                 $(this).on('click',function(){
@@ -31,45 +31,53 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
                             let color_track = $(modification_content).find('.content').find('#color-track').css('background-color'),
                                 color_trail = $(modification_content).find('.content').find('#color-trail').css('background-color'),
                                 color_handler = $(modification_content).find('.content').find('#color-handler').css('background-color');
-                            $(context).parent().find('.ui-slider-range').css('background',color_track);
-                            $(context).parent().find('.ui-slider-handle').css({'background-color':color_handler,
+                            $(context).find('.ui-slider-range').css('background',color_track);
+                            $(context).find('.ui-slider-handle').css({'background-color':color_handler,
                                                                             'border-color':color_handler});
-                            $(context).parent().find('.ui-slider').css('background-color',color_trail)
+                            $(context).find('.ui-slider').css('background-color',color_trail)
                         }
                     };
                 },
                 changeOptions : function(){
                     return {
-                        controlsStep: function(){
-                            let step = $(modification_content).find('.change-options')
+                        changeLabel : function(){},
+                        changeInterval : function(){},
+                        changeStep: function(){
+                            return $(modification_content).find('.change-options')
                                                               .find('#slider-step')
                                                               .find('input').val()
                         },
-                        changeInterval : function(){},
-                        confirmOptions: function(){}
+                        changeMin: function(){},
+                        changeMax: function(){},
+                        changeValue: function(){},
+                        changeOrientation : function(){},
+                        confirmOptions: function(context){
+                            let options = {
+                                step:methods.changeOptions().changeStep(),
+                                min:methods.changeOptions().changeMin(),
+                                max:methods.changeOptions().changeMax(),
+                                interval:methods.changeOptions().changeInterval(),
+                                orientation:methods.changeOptions().changeOrientation(),
+                                start_position:methods.changeOptions().changeValue()
+                            };
+                            horizontalSlider(context,options);
+                        }
                     }
                 },
-                changeOrientation : function(){},
-                changeLabel : function(){},
                 confirmModifications: function(){
                     $checkboxes.each(function(){
                         if($(this).is(':checked')){
-                            methods.changeColors().confirmColors(this);
-                            methods.changeOptions().controlsStep();
+                            let sliders = $(this).parent().find(".slider");
+                            methods.changeColors().confirmColors(sliders);
+                            methods.changeOptions().confirmOptions(sliders);
                         }
                     });
-                },
-                stateModification: function(context){
-                    $(context).find('.header').on('click', function(){
-                        $(context).find('.content').slideToggle();
-                    })
                 }
             };
 
         function modification(){
             $checkboxes.css('display','block');
-            methods.changeColors().controls();
-            methods.changeOptions().changeInterval()
+            methods.changeColors().append()
         }
 
 
