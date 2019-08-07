@@ -106,13 +106,19 @@ body {
         margin: 0;
         width: 100%;
         text-align: center; }
+      .slider-modification ul .content .options {
+        display: flex;
+        flex-direction: column; }
     .slider-modification ul .colorpicker {
       display: flex;
       justify-content: center;
       background: #bd4326; }
-    .slider-modification ul .options {
-      display: flex;
-      flex-direction: column; }
+    .slider-modification ul #slider-orientation .options {
+      flex-direction: row-reverse; }
+      .slider-modification ul #slider-orientation .options input {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin: 0; }
 
 .slider-wrapper {
   position: relative;
