@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74499517-2498-4572-9630-fe207e65b1e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/content/basic_button/confirm_button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,92 +18,127 @@
     <session id="-1096984117">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
-          <entry key="project.open.time.10" value="5" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.closed" value="93" />
+          <entry key="project.open.time.10" value="10" />
+          <entry key="project.open.time.11" value="18" />
+          <entry key="project.open.time.12" value="8" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.46" value="2" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.46" value="3" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.70" value="1" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.open.time.8" value="11" />
+          <entry key="project.open.time.9" value="23" />
+          <entry key="project.opened" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="js" value="35" />
+          <entry key="css" value="2" />
+          <entry key="html" value="6" />
+          <entry key="js" value="46" />
           <entry key="png" value="5" />
-          <entry key="pug" value="14" />
-          <entry key="scss" value="4" />
+          <entry key="pug" value="24" />
+          <entry key="scss" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="6" />
           <entry key="Image" value="5" />
-          <entry key="Jade" value="14" />
-          <entry key="JavaScript" value="35" />
-          <entry key="SCSS" value="4" />
+          <entry key="Jade" value="24" />
+          <entry key="JavaScript" value="46" />
+          <entry key="SCSS" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="4999" />
-          <entry key="pug" value="101" />
-          <entry key="scss" value="184" />
-          <entry key="txt" value="121" />
+          <entry key="css" value="313" />
+          <entry key="html" value="951" />
+          <entry key="js" value="11767" />
+          <entry key="pug" value="1213" />
+          <entry key="scss" value="660" />
+          <entry key="txt" value="356" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4" />
-          <entry key="Jade" value="101" />
-          <entry key="JavaScript" value="4995" />
-          <entry key="PLAIN_TEXT" value="121" />
-          <entry key="SCSS" value="184" />
+          <entry key="CSS" value="313" />
+          <entry key="HTML" value="966" />
+          <entry key="Jade" value="1213" />
+          <entry key="JavaScript" value="11752" />
+          <entry key="PLAIN_TEXT" value="356" />
+          <entry key="SCSS" value="660" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js">
+        <entry file="file://$PROJECT_DIR$/src/pug/content/content.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
+        <entry file="file://$PROJECT_DIR$/src/pug/content/content.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            <state relative-caret-position="323">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.scss">
+        <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="595">
+              <caret line="35" column="92" selection-start-line="35" selection-start-column="92" selection-end-line="35" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+              <folding>
+                <element signature="e#424#992#0" />
+                <element signature="e#434#2429#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pug/content/slider/sliders.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/oop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -118,6 +148,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -125,6 +157,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>farbt</find>
+      <find>vert</find>
+      <find>slider</find>
+      <find>par</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,22 +170,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pug/content/slider/slider.scss" />
-        <option value="$PROJECT_DIR$/src/pug/content/slider/sliders.js" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modification/slider-modifications.js" />
         <option value="$PROJECT_DIR$/src/pug/content/modification-color/modification-color.js" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/farbtastic/colorpicker.js" />
         <option value="$PROJECT_DIR$/src/pug/content/slider/slider.pug" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.js" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modification.js" />
-        <option value="$PROJECT_DIR$/src/pug/content/content.pug" />
-        <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.pug" />
         <option value="$PROJECT_DIR$/src/pug/content/basic_button/confirm_button.js" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/farbtastic/farbtastic.js" />
+        <option value="$PROJECT_DIR$/src/pug/content/slider/slider_default.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/pug/content/content.pug" />
+        <option value="$PROJECT_DIR$/src/pug/content/slider/slider.scss" />
         <option value="$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js" />
-        <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js" />
+        <option value="$PROJECT_DIR$/src/pug/content/content.scss" />
+        <option value="$PROJECT_DIR$/src/pug/content/basic_button/basic_button.scss" />
+        <option value="$PROJECT_DIR$/src/js/indexx.js" />
+        <option value="$PROJECT_DIR$/src/js/index.css" />
+        <option value="$PROJECT_DIR$/src/js/index.html" />
         <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.scss" />
+        <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.pug" />
+        <option value="$PROJECT_DIR$/src/js/oop.js" />
+        <option value="$PROJECT_DIR$/src/pug/content/slider/sliders.js" />
+        <option value="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js" />
       </list>
     </option>
   </component>
@@ -169,6 +211,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="523" />
+    <option name="y" value="29" />
     <option name="width" value="640" />
     <option name="height" value="984" />
   </component>
@@ -189,12 +233,6 @@
               <item name="FirstTask_Slider" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstTask_Slider" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask_Slider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask_Slider" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstTask_Slider" type="b2602c69:ProjectViewProjectNode" />
@@ -226,7 +264,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pug" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="basic_button" type="462c0819:PsiDirectoryNode" />
+              <item name="slider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstTask_Slider" type="b2602c69:ProjectViewProjectNode" />
@@ -244,11 +282,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FirstTask_FlatUi_Blocks" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codding\GitHub\FirstTask_Slider\src\pug\content\toggle_tick_box" />
+      <recent name="D:\Codding\GitHub\FirstTask_Slider\src\pug\content\tick_box" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Codding\GitHub\FirstTask_Slider\src\pug\content\slider-modifications\farbtastic" />
       <recent name="D:\Codding\GitHub\FirstTask_Slider\src\pug\content\slider-modifications" />
@@ -268,6 +312,15 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.build">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstTask_Slider/src/js/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="jquery-modifications.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="jquery-modifications.js" working-dir="$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin">
+      <method v="2" />
+    </configuration>
+    <configuration name="oop.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="oop.js" working-dir="$PROJECT_DIR$/src/js">
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -291,7 +344,17 @@
     <list>
       <item itemvalue="npm.dev" />
       <item itemvalue="npm.build" />
+      <item itemvalue="Node.js.oop.js" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.jquery-modifications.js" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.oop.js" />
+        <item itemvalue="Node.js.jquery-modifications.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -344,6 +407,67 @@
       <workItem from="1562936176394" duration="1787000" />
       <workItem from="1562938579798" duration="1801000" />
       <workItem from="1562940407951" duration="2027000" />
+      <workItem from="1562944874809" duration="168000" />
+      <workItem from="1562947030158" duration="53000" />
+      <workItem from="1562949702529" duration="941000" />
+      <workItem from="1563126828238" duration="1088000" />
+      <workItem from="1563128615820" duration="1143000" />
+      <workItem from="1563130515356" duration="1786000" />
+      <workItem from="1563132328718" duration="1785000" />
+      <workItem from="1563134143386" duration="1791000" />
+      <workItem from="1563136077107" duration="1787000" />
+      <workItem from="1563138660805" duration="597000" />
+      <workItem from="1563139684849" duration="1168000" />
+      <workItem from="1563207217843" duration="1342000" />
+      <workItem from="1563210496130" duration="8000" />
+      <workItem from="1563210592349" duration="1784000" />
+      <workItem from="1563212408683" duration="1781000" />
+      <workItem from="1563214220966" duration="1786000" />
+      <workItem from="1563216106286" duration="1783000" />
+      <workItem from="1563217927700" duration="1784000" />
+      <workItem from="1563219741322" duration="583000" />
+      <workItem from="1563908715052" duration="70000" />
+      <workItem from="1563921657701" duration="669000" />
+      <workItem from="1564062814298" duration="1912000" />
+      <workItem from="1564065221811" duration="1807000" />
+      <workItem from="1564068248039" duration="1426000" />
+      <workItem from="1564070291277" duration="647000" />
+      <workItem from="1564072194840" duration="1346000" />
+      <workItem from="1564079408810" duration="1713000" />
+      <workItem from="1564083466592" duration="973000" />
+      <workItem from="1564334717126" duration="853000" />
+      <workItem from="1564336238231" duration="2083000" />
+      <workItem from="1564339136697" duration="1509000" />
+      <workItem from="1564340955191" duration="1782000" />
+      <workItem from="1564342770268" duration="1961000" />
+      <workItem from="1564345153818" duration="963000" />
+      <workItem from="1564409129149" duration="1797000" />
+      <workItem from="1564411406024" duration="1777000" />
+      <workItem from="1564413855490" duration="2972000" />
+      <workItem from="1565179452971" duration="1666000" />
+      <workItem from="1565184746394" duration="1793000" />
+      <workItem from="1565187478542" duration="1782000" />
+      <workItem from="1565189293919" duration="1537000" />
+      <workItem from="1565192288720" duration="1797000" />
+      <workItem from="1565195577975" duration="1449000" />
+      <workItem from="1565197435598" duration="706000" />
+      <workItem from="1565203183497" duration="1783000" />
+      <workItem from="1565204995480" duration="1782000" />
+      <workItem from="1565206801625" duration="1736000" />
+      <workItem from="1565208744792" duration="1259000" />
+      <workItem from="1565262548446" duration="1170000" />
+      <workItem from="1565265122037" duration="1784000" />
+      <workItem from="1565266957561" duration="1801000" />
+      <workItem from="1565268832171" duration="1787000" />
+      <workItem from="1565270646900" duration="1785000" />
+      <workItem from="1565272464528" duration="1784000" />
+      <workItem from="1565274274507" duration="1795000" />
+      <workItem from="1565276106703" duration="1789000" />
+      <workItem from="1565277926227" duration="1792000" />
+      <workItem from="1565279750422" duration="1507000" />
+      <workItem from="1565281581289" duration="1786000" />
+      <workItem from="1565283395812" duration="1789000" />
+      <workItem from="1565285232857" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="+ изменение цвета для slider-range&#10;+ кнопка подтверждения&#10;+ farbastic(плагин выбора цвета)">
       <created>1562875326433</created>
@@ -359,44 +483,88 @@
       <option name="project" value="LOCAL" />
       <updated>1562875336276</updated>
     </task>
-    <task id="LOCAL-00003" summary="+ выпадающее меню модификации слайда">
-      <created>1561920934439</created>
+    <task id="LOCAL-00003" summary="+ изменение цвета для slider-range&#10;+ исправил неудобства">
+      <created>1562945036420</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1561920934439</updated>
+      <updated>1562945036420</updated>
     </task>
-    <task id="LOCAL-00004" summary="+ горизонтальный слайдер(+стиль)&#10;+ вертикальный слайдер&#10;+ реакция на выбор слайдера">
-      <created>1562014873335</created>
+    <task id="LOCAL-00004" summary="+ изменение цвета для slider-range&#10;+ исправил неудобства">
+      <created>1562947078433</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1562014873335</updated>
+      <updated>1562947078433</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00005" summary="+ небольшие исправления&#10;+ подготовка к следующим задачам">
+      <created>1563220270238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563220270238</updated>
+    </task>
+    <task id="LOCAL-00006" summary="+ небольшие исправления&#10;+ подготовка к следующим задачам">
+      <created>1563220302541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563220302541</updated>
+    </task>
+    <task id="LOCAL-00007" summary="+ детальное изменение слайдеров(без логики)">
+      <created>1565209954001</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565209954001</updated>
+    </task>
+    <task id="LOCAL-00008" summary="+ детальное изменение слайдеров(без логики)">
+      <created>1565209987629</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565209987629</updated>
+    </task>
+    <task id="LOCAL-00009" summary="+ исправил ошибки&#10;+ логика для шага&#10;+ дефолтные значения ползунка&#10;+ проверка на ввод шага">
+      <created>1565285735725</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565285735726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47632000" />
+    <option name="totallyTimeSpent" value="135182000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22496025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12718602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49682036" weight="0.3290993" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.627186" weight="0.3290993" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62559617" weight="0.26789838" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995381" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4872814" weight="0.3290993" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4944356" weight="0.3290993" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.372814" side_tool="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48251194" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4936407" weight="0.3290993" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51748806" side_tool="true" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,35 +580,22 @@
     <MESSAGE value="+ выпадающее меню модификации слайда" />
     <MESSAGE value="+ горизонтальный слайдер(+стиль)&#10;+ вертикальный слайдер&#10;+ реакция на выбор слайдера" />
     <MESSAGE value="+ изменение цвета для slider-range&#10;+ кнопка подтверждения&#10;+ farbastic(плагин выбора цвета)" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ изменение цвета для slider-range&#10;+ кнопка подтверждения&#10;+ farbastic(плагин выбора цвета)" />
+    <MESSAGE value="+ изменение цвета для slider-range&#10;+ исправил неудобства" />
+    <MESSAGE value="+ небольшие исправления&#10;+ подготовка к следующим задачам" />
+    <MESSAGE value="+ детальное изменение слайдеров(без логики)" />
+    <MESSAGE value="+ исправил ошибки&#10;+ логика для шага&#10;+ дефолтные значения ползунка&#10;+ проверка на ввод шага" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ исправил ошибки&#10;+ логика для шага&#10;+ дефолтные значения ползунка&#10;+ проверка на ввод шага" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pug/index.pug">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/content/content.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/includes.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/modification-color/modification-color.js" />
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/jscolor/jscolor.js" />
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/farbtastic/colorpicker.js" />
-    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/slider.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/farbtastic/wheel.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -450,24 +605,7 @@
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/farbtastic/marker.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/content/content.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.js" />
-    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/sliders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/img/marker.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -478,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -506,31 +637,122 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/confirm_button.js" />
-    <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js">
+    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/slider_default.js" />
+    <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/toggle_tick_box/toggle.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/toggle_tick_box/tick_box.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/toggle_tick_box/toggle_tick_box.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/slider.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        <state relative-caret-position="136">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/indexx.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/basic_button/basic_button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="117">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/slider.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/content.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/slider-modifications.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="92" selection-start-line="35" selection-start-column="92" selection-end-line="35" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/oop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pug/content/slider-modifications/jquery-plugin/jquery-modifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        <state relative-caret-position="357">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="e#424#992#0" />
+            <element signature="e#434#2429#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/content/slider/sliders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
