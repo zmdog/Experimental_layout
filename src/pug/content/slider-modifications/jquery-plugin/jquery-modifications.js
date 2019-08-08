@@ -7,6 +7,14 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
             $buttonModification = $('footer').find('.button'),
             modification_content = $(this).find('.modification_content'),
             methods = {
+                options: function(){
+                    this.min = methods.changeOptions().changeMin() || 0;
+                    this.max = methods.changeOptions().changeMax() || 100;
+                    this.step = methods.changeOptions().changeStep() || 50;
+                    this.interval = methods.changeOptions().changeInterval() || 4;
+                    this.orientation = methods.changeOptions().changeOrientation() || 'horizontal';
+                    this.start_position = methods.changeOptions().changeValue() || 3;
+                },
                 changeColors : function(){
                     return {
                         append: function(){
@@ -45,22 +53,19 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
                         changeStep: function(){
                             return $(modification_content).find('.change-options')
                                                               .find('#slider-step')
-                                                              .find('input').val()
+                                                              .find('input').val();
+
                         },
                         changeMin: function(){},
                         changeMax: function(){},
                         changeValue: function(){},
                         changeOrientation : function(){},
                         confirmOptions: function(context){
-                            let options = {
-                                step:methods.changeOptions().changeStep(),
-                                min:methods.changeOptions().changeMin(),
-                                max:methods.changeOptions().changeMax(),
-                                interval:methods.changeOptions().changeInterval(),
-                                orientation:methods.changeOptions().changeOrientation(),
-                                start_position:methods.changeOptions().changeValue()
-                            };
-                            horizontalSlider(context,options);
+                            let settings = new methods.options();
+
+                            if(settings.orientation === 'horizontal'){horizontalSlider(context, methods)}else{
+                                verticalSlider(context, options);
+                            }
                         }
                     }
                 },
@@ -83,7 +88,7 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
 
         return this.each(function () {
             if($(this).find('header').find('.button').text() === 'горизонталный слайдер'){
-                horizontalSlider($sliders);
+                horizontalSlider($sliders, methods);
                 modification();
                 $(this).find('ul').each((index, elem)=>{
                     $(elem).find('.header').on('click', function(){
@@ -93,7 +98,7 @@ import {horizontalSlider, verticalSlider} from "../../slider/sliders";
                 $buttonModification.on('click', function () {methods.confirmModifications()});
                 $(this).find('header').find('.button').text('вертикальный слайдер');
             }else{
-                verticalSlider($sliders);
+                verticalSlider($sliders, methods);
                 $(this).find('header').find('.button').text('горизонталный слайдер');
                 $buttonModification.on('click', function () {methods.confirmModifications()});
                 modification();

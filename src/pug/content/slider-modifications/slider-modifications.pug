@@ -5,10 +5,10 @@ mixin modificatin_change-color(color, type, content)
     input(type='text' value=color id=type class='colorwell')
     p=content
 
-mixin modification_change-options(input, type, content)
+mixin modification_change-options(input, type, content, name)
     div(class='options' id=type)
         p=content
-        input(type=input)
+        input(type=input name=name)
 
 
 mixin slider_modification()
@@ -16,7 +16,7 @@ mixin slider_modification()
     section(class='slider-modification')
         .modification_content
             ul(class='change-color')
-                +modification_header('Выбор цвета')
+                +modification_header('Цвет ползунка')
                 li(class='content')
                     div
                         div(class='colors')
@@ -29,12 +29,12 @@ mixin slider_modification()
             ul(class='change-options')
                 +modification_header('Параметры ползунка')
                 li(class='content')
-                    +modification_change-options('text', 'slider-step', 'Шаг ползунка')
-                    +modification_change-options('text', 'slider-interval', 'Интервал ползунка')
-                    +modification_change-options('text', 'slider-min', 'Минимум ползунка')
-                    +modification_change-options('text', 'slider-max', 'Максимум ползунка')
+                    +modification_change-options('number', 'slider-step', 'Шаг ползунка')
+                    +modification_change-options('number', 'slider-interval', 'Интервал ползунка')
+                    +modification_change-options('number', 'slider-min', 'Минимум ползунка')
+                    +modification_change-options('number', 'slider-max', 'Максимум ползунка')
+                    +modification_change-options('text', 'slider-value', 'Позиция ползунка')
                     div(id='slider-orientation')
                         p='Ползунок'
-                        +modification_change-options('checkbox', 'horizontal', 'Горизонтальный')
-                        +modification_change-options('checkbox', 'vertical', 'Вертикальный')
-                    +modification_change-options('text', 'slider-value', 'Позиция ползунка')
+                        +modification_change-options('radio', 'horizontal', 'Горизонтальный', 'orientation')
+                        +modification_change-options('radio', 'vertical', 'Вертикальный', 'orientation')
